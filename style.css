@@ -156,3 +156,42 @@ footer a{
     text-decoration: underline;
     color: #FFFFFF;
 }
+@media screen and (max-width: 480px){
+    main{
+        display: block;
+    }
+    header img{
+        width: 50px;
+    }
+    header h1{
+        font-size: 16px;
+        text-align: center;
+    }
+    .field1{
+        width: auto;
+        height: 500px;
+        margin: 0 0 1em 0;
+    }
+    .area{
+        height: 50%;
+    }
+    .btn{
+        display: block;
+        width: 100%;
+        margin-bottom: 1em;
+    }
+    .btn-outline{
+        width: 100%;
+    }
+    .field2{
+        width: auto;
+    }
+    #img-muñeco{
+        display: none;
+    }
+    #result{
+        height: auto;
+        margin-bottom: 2em;
+        min-height: 300px;
+    }
+}
