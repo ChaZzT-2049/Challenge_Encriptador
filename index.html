@@ -5,31 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <img src="" alt="logo-alura"><h1>Challenge: Encriptador y Desencriptador.</h1>
+        <img src="images/Logo1.png" alt="logo-alura"><h1>Challenge: Encriptador y Desencriptador.</h1>
     </header>
     <main>
-        <section>
-            <textarea placeholder="Ingrese el Texto Aquí"></textarea>
-            <img src="" alt="advertencia">
-            <small>Solo letras minusculas y sin acentos</small>
-            <div >
-                <button>Encriptar</button>
-                <button>Desencriptar</button>
+        <section class="field1">
+            <textarea name="area" class="area" id="area" placeholder="Ingrese el Texto Aquí"></textarea>
+            <img class="icon-advice" src="images/icon-advice.svg" alt="advertencia">
+            <small class="advice">Solo letras minusculas y sin acentos</small>
+            <div class="buttons">
+                <button class="btn">Encriptar</button>
+                <button class="btn-outline">Desencriptar</button>
             </div>
         </section>
-        <section>
-            <div>
-                <img src="" alt="persona-buscando">
-                <h2 >Ningun mensaje fue encontrado</h2>
-                <p>Primero ingresa el texto que desees encriptar o desencriptar.</p>
+        <section class="field2">
+            <div id="message">
+                <img id="img-muñeco" src="images/Muñeco1.png" alt="persona-buscando">
+                <h2 class="msg-title">Ningun mensaje fue encontrado</h2>
+                <p class="msg-message">Primero ingresa el texto que desees encriptar o desencriptar.</p>
             </div>
-            <div>
-                <h2 >Resultado del texto: </h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates soluta velit autem consequuntur! Molestias, culpa non. Ipsam provident, labore optio vel dicta necessitatibus deleniti magni, doloribus cum non sequi obcaecati.</p>
-                <button>Copiar Texto</button>
+            <div id="result">
+                <h2 class="msg-title">Resultado del texto: </h2>
+                <p class="result-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates soluta velit autem consequuntur! Molestias, culpa non. Ipsam provident, labore optio vel dicta necessitatibus deleniti magni, doloribus cum non sequi obcaecati.</p>
+                <button class="copy-btn">Copiar Texto</button>
             </div>
             
         </section>
@@ -42,3 +47,4 @@
     </footer>
 </body>
 </html>
+<script src="script.js"></script>
